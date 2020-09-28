@@ -37,7 +37,8 @@ export const updateSmurfData = (smurf) => (dispatch) => {
     dispatch({
         type: ACTIONS.UPDATE_SMURF_START,
     })
-    axios
+    setTimeout(() => {
+        axios
         .post('http://localhost:3333/smurfs/', smurf)
         .then(res => {
             console.log(res)
@@ -53,5 +54,5 @@ export const updateSmurfData = (smurf) => (dispatch) => {
                 payload: err.message
             })
         })
-
+    }, 3000)
 }

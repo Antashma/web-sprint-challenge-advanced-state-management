@@ -20,7 +20,7 @@ const App = (props) => {
         <p>smurfs: {props.smurfData.map(smurf => smurf.name).join(', ')}</p>
         <div>Welcome to your state management version of Smurfs!</div>
         <div>Start inside of your `src/index.js` file!</div>
-        <Form updateSmurfData={props.updateSmurfData} />
+        <Form getSmurfData={props.getSmurfData} updateSmurfData={props.updateSmurfData} />
       </div>
     );
 }

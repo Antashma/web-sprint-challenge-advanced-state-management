@@ -15,7 +15,11 @@ const Form = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.updateSmurfData({...newSmurf, id: Date.now()});
+        props.updateSmurfData({...newSmurf});
+        setTimeout(() => {
+            props.getSmurfData();
+        }, 3000)
+        
     }
 
     return (
