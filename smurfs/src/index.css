@@ -9,13 +9,60 @@ h2 {
 }
 
 h3 {
+  margin: 0;
   text-transform: capitalize;
+  background-color: darkturquoise;
+  color: floralwhite;
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  align-items: center;
+}
+label {
+  font-weight: bold;
+}
+
+button {
+  padding: 20px;
+  max-width: 300px;
+  color: floralwhite;
+  font-weight: bold;
+
+  background: darkturquoise;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #333;
 }
 
 .villageInfo {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .villageInfo h2 {
   align-self: center;
+}
+
+.smurf-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.smurf {
+  padding: 0;
+  min-width: 150px;
+  margin: 15px;
+  border: 1px solid darkturquoise
 }

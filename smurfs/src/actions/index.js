@@ -45,7 +45,7 @@ export const updateSmurfData = (smurf) => (dispatch) => {
             dispatch({
                 type: ACTIONS.UPDATE_SMURF_SUCESS
             })
-            
+            //setTimeout(()=>{getSmurfData()},3000)
         })
         .catch(err => {
             console.log(err)
