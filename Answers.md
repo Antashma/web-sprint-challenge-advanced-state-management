@@ -5,7 +5,7 @@ Context API simplifies state management without using prop-drilling. You can als
 
 1. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
-Actions decribe what will happen to the state. Reducers transform the state based on the action. The store holds is known as the single source of trutch because it hold the entire state of the application.
+Actions are plain objects that decribe what will happen to the state. Reducers are pure funcions that transform the state based on the action. The store is known as the single source of trutch because it hold the entire state of the application.
 
 
 1. What is the difference between Application state and Component state? When would be a good time to use one over the other?
@@ -15,8 +15,7 @@ Application state can also be known as global state since it it data that is ava
 
 1. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
 
-Redux thunk allows us to do something with functions. It changes out action creators y letting us use dispatchers.
-
+Redux thunk helps our logic be asynchronous. It changes out actions creators by allowin us to delay the dispatch of an action or only run if the logic allows it.
 
 1. What is your favorite state management system you've learned and this sprint? Please explain why!
 
