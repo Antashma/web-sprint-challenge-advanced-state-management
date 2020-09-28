@@ -3,3 +3,19 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+h2 {
+  color: darkturquoise;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+.villageInfo {
+  display: flex;
+}
+
+.villageInfo h2 {
+  align-self: center;
+}

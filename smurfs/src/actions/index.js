@@ -54,5 +54,5 @@ export const updateSmurfData = (smurf) => (dispatch) => {
                 payload: err.message
             })
         })
-    }, 3000)
+    }, 2000)
 }

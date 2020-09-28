@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 
 import {getSmurfData, updateSmurfData} from '../actions'
 
+import SmurfVillage from './SmurfVillage';
 import Form from './Form';
 
 import "./App.css";
@@ -15,12 +16,14 @@ const App = (props) => {
   return (
       <div className="App">
         <h1>Welcome to the SMURF REDUX VILLAGE</h1>
-        {props.isLoading ? <h2>Loading Village Data...</h2> : null}
-        <p>population:{props.smurfData.length}</p>
-        <p>smurfs: {props.smurfData.map(smurf => smurf.name).join(', ')}</p>
-        <div>Welcome to your state management version of Smurfs!</div>
-        <div>Start inside of your `src/index.js` file!</div>
-        <Form getSmurfData={props.getSmurfData} updateSmurfData={props.updateSmurfData} />
+        { props.isLoading 
+        ? <h2>Loading Village Data...</h2> 
+        : <div>
+            <SmurfVillage smurfData = {props.smurfData} /> 
+            <Form getSmurfData={props.getSmurfData} updateSmurfData={props.updateSmurfData} />
+          </div>
+        }
+        
       </div>
     );
 }
